@@ -13,6 +13,7 @@ import { UsersComponent } from "./myComponent/users/users.component";
 import { PerfilUsuarioComponent } from "./myComponent/perfil-usuario/perfil-usuario.component";
 import { RegistroUsuariosComponent } from "./myComponent/users/registro-usuarios/registro-usuarios.component";
 import { HomeComponent } from "./myComponent/home/home.component";
+import { InicioComponent } from "./myComponent/inicio/inicio.component";
 
 const routes: Routes = [
   {
@@ -23,6 +24,10 @@ const routes: Routes = [
   {
     path: "home",
     component: HomeComponent
+  },
+  {
+    path: "inicio",
+    component: InicioComponent
   },
   {
     path: "registro",
@@ -57,7 +62,8 @@ const routes: Routes = [
     UsersComponent,
     PerfilUsuarioComponent,
     RegistroUsuariosComponent,
-    HomeComponent
+    HomeComponent,
+    InicioComponent
   ],
   imports: [BrowserModule, RouterModule.forRoot(routes), ReactiveFormsModule],
   providers: [],
