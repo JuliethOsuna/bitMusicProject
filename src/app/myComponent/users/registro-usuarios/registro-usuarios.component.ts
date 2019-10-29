@@ -16,5 +16,9 @@ export class RegistroUsuariosComponent implements OnInit {
     password: ["", Validators.required]
   });
 
+  enviar(registerInfo) {
+    console.log(registerInfo);
+  }
+
   ngOnInit() {}
 }

@@ -12,12 +12,17 @@ import { PerfilComponent } from "./myComponent/perfil/perfil.component";
 import { UsersComponent } from "./myComponent/users/users.component";
 import { PerfilUsuarioComponent } from "./myComponent/perfil-usuario/perfil-usuario.component";
 import { RegistroUsuariosComponent } from "./myComponent/users/registro-usuarios/registro-usuarios.component";
+import { HomeComponent } from "./myComponent/home/home.component";
 
 const routes: Routes = [
   {
     path: "",
     pathMatch: "full",
-    redirectTo: "/perfil"
+    redirectTo: "/home"
+  },
+  {
+    path: "home",
+    component: HomeComponent
   },
   {
     path: "registro",
@@ -51,7 +56,8 @@ const routes: Routes = [
     PerfilComponent,
     UsersComponent,
     PerfilUsuarioComponent,
-    RegistroUsuariosComponent
+    RegistroUsuariosComponent,
+    HomeComponent
   ],
   imports: [BrowserModule, RouterModule.forRoot(routes), ReactiveFormsModule],
   providers: [],

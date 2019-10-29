@@ -1,5 +1,5 @@
 <h1>Formulario de registro</h1>
-<form [formGroup]="registerForm">
+<form [formGroup]="registerForm" (ngSubmit)="enviar(registerForm.value)">
     <label>Nombre</label>
     <input type="text" formControlName="name">
     <br>
